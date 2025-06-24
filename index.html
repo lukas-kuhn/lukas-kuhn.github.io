@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lukas Kuhn - AI & Neuroscience Researcher</title>
+  <!-- Libre Franklin font -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Libre Franklin', sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+      padding: 2rem;
+      font-size: 0.85rem;
+    }
+    .top-section {
+      display: flex;
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto 2rem auto;
+      align-items: flex-start;
+    }
+    .profile-image {
+      flex-shrink: 0;
+      width: 200px;
+      height: 200px;
+      border-radius: 10%;
+      object-fit: cover;
+    }
+    .top-content {
+      flex: 1;
+      min-width: 0;
+    }
+    header {
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      font-weight: 600;
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      font-weight: 300;
+      margin: 0.5rem 0;
+    }
+    .about-section {
+      margin-bottom: 0;
+    }
+    .about-section h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.25rem;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    section {
+      max-width: 1000px;
+      margin: 1.5rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.25rem;
+      font-weight: 400;
+      margin-top: 2rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 0.5rem 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .news-item {
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 3rem;
+    }
+    
+    /* Publications table */
+    .publications-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    .publications-table td {
+      padding: 0.75rem 1rem 0.75rem 0;
+      vertical-align: top;
+      border: none;
+    }
+    .publications-table .title {
+      font-weight: 400;
+    }
+    .publications-table .authors {
+      color: #555;
+    }
+    .publications-table .venue {
+      color: #666;
+      font-size: 0.9em;
+    }
+    .publications-table .link {
+      text-align: right;
+    }
+    .publications-table tr {
+      border-bottom: 1px solid #eee;
+    }
+    .publications-table tr:last-child {
+      border-bottom: none;
+    }
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .about-section {
+       margin-left: 1rem;
+       margin-right: 1rem;
+      }
+      .top-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .profile-image {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 1rem;
+      }
+      header {
+        text-align: center;
+      }
+      
+      /* Mobile publications table - stacked layout */
+      .publications-table, 
+      .publications-table tbody, 
+      .publications-table tr, 
+      .publications-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .publications-table {
+        margin: 1rem 0;
+      }
+      .publications-table tr {
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #eee;
+        padding: 1.5rem 0;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      }
+      .publications-table tr:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+      .publications-table td {
+        padding: 0.5rem 1rem;
+        border: none;
+        text-align: left;
+        width: calc(100% - 2rem);
+      }
+      .publications-table .title {
+        font-size: 1em;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        line-height: 1.4;
+      }
+      .publications-table .authors {
+        font-size: 0.9em;
+        margin-bottom: 0.25rem;
+        color: #555;
+      }
+      .publications-table .venue {
+        font-size: 0.85em;
+        margin-bottom: 0.25rem;
+        color: #666;
+      }
+      .publications-table .link {
+        text-align: left;
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-section">
+    <img src="images/me.jpg" alt="Lukas Kuhn" class="profile-image">
+    <div class="top-content">
+      <header>
+        <h1>Lukas Kuhn</h1>
+        <p>Research Scientist @ DKFZ Heidelberg | M.Sc. AI, Goethe University Frankfurt</p>
+      </header>
+      
+      <div class="about-section">
+        <h2>About Me</h2>
+        <p>I'm a passionate researcher working at the intersection of AI and Neuroscience, trying to bridge the gap between the sample efficient & robust primate brain and sample hungry & brittle AI. 
+      </div>
+    </div>
+  </div>
+  
+  <section id="news">
+    <h2>News</h2>
+    <div class="news-item">
+      <strong>April 2025:</strong> I am presenting <i>"Cognitive Neural Architecture Search Reveals Hierarchical Entailment"</i> at the Second Representational Alignment Workshop at the 2025 International Conference on Representation Learning (ICLR)
+    </div>
+  </section>
+  
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <table class="publications-table">
+      <tr>
+        <td class="title"><em>Beyond Overconfidence: Foundation Models Redefine Calibration in Deep Neural Networks</em></td>
+        <td class="authors">Achim Hekler, <strong>Kuhn, Lukas</strong>, Florian Buettner</td>
+        <td class="venue">arXiv, 2025</td>
+        <td class="link"><a href="https://arxiv.org/abs/2506.09593">[Link]</a></td>
+      </tr>
+      <tr>
+        <td class="title"><em>Cognitive Neural Architecture Search Reveals Hierarchical Entailment</em></td>
+        <td class="authors"><strong>Kuhn, Lukas</strong>, Sari Sadiya, Gemma Roig</td>
+        <td class="venue">Re-Align 2 @ ICLR, 2025</td>
+        <td class="link"><a href="https://arxiv.org/abs/2502.11141">[Link]</a></td>
+      </tr>
+      <tr>
+        <td class="title"><em>Efficient unsupervised shortcut learning detection and mitigation in transformers</em></td>
+        <td class="authors"><strong>Kuhn, Lukas</strong>, Sari Sadiya, Jorg Schlotterer, Florian Buettner, Christin Seifert, Gemma Roig</td>
+        <td class="venue">arXiv, 2025</td>
+        <td class="link"><a href="https://arxiv.org/abs/2501.00942">[Link]</a></td>
+      </tr>
+    </table>
+    <p>See more on <a href="https://scholar.google.com/citations?user=-Y-DZ1AAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar »</a></p>
+  </section>
+  
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>M.Sc. in Artificial Intelligence</strong>, Goethe University Frankfurt (2024-2026)</li>
+      <li><strong>B.Sc. in Computer Science</strong>, Goethe University Frankfurt (2018-2022)</li>
+    </ul>
+  </section>
+  
+  <footer>
+    &copy; 2025 Lukas Kuhn
+  </footer>
+</body>
+</html>
