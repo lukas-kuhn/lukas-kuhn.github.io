@@ -1,273 +1,204 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Lukas Kuhn</title>
+
+  <meta name="author" content="Lukas Kuhn">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lukas Kuhn - AI & Neuroscience Researcher</title>
-  <!-- Libre Franklin font -->
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Libre Franklin', sans-serif;
-      line-height: 1.6;
-      color: #222;
-      background: #fafafa;
-      padding: 2rem;
-      font-size: 0.85rem;
-    }
-    .top-section {
-      display: flex;
-      gap: 2rem;
-      max-width: 1000px;
-      margin: 0 auto 2rem auto;
-      align-items: flex-start;
-    }
-    .profile-image {
-      flex-shrink: 0;
-      width: 200px;
-      height: 200px;
-      border-radius: 10%;
-      object-fit: cover;
-    }
-    .top-content {
-      flex: 1;
-      min-width: 0;
-    }
-    header {
-      text-align: left;
-      margin-bottom: 1.5rem;
-    }
-    header h1 {
-      font-weight: 600;
-      margin: 0;
-      font-size: 2rem;
-    }
-    header p {
-      font-weight: 300;
-      margin: 0.5rem 0;
-    }
-    .about-section {
-      margin-bottom: 0;
-    }
-    .about-section h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.25rem;
-      font-weight: 400;
-      margin-top: 0;
-      margin-bottom: 1rem;
-    }
-    section {
-      max-width: 1000px;
-      margin: 1.5rem auto;
-      padding: 0 1rem;
-    }
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.25rem;
-      font-weight: 400;
-      margin-top: 2rem;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 0.5rem 0;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .news-item {
-      margin-bottom: 1rem;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.8rem;
-      color: #888;
-      margin-top: 3rem;
-    }
-    
-    /* Publications table */
-    .publications-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1rem 0;
-    }
-    .publications-table td {
-      padding: 0.75rem 1rem 0.75rem 0;
-      vertical-align: top;
-      border: none;
-    }
-    .publications-table .title {
-      font-weight: 400;
-    }
-    .publications-table .authors {
-      color: #555;
-    }
-    .publications-table .venue {
-      color: #666;
-      font-size: 0.9em;
-    }
-    .publications-table .link {
-      text-align: right;
-    }
-    .publications-table tr {
-      border-bottom: 1px solid #eee;
-    }
-    .publications-table tr:last-child {
-      border-bottom: none;
-    }
-    
-    /* Responsive design */
-    @media (max-width: 768px) {
-      .about-section {
-       margin-left: 1rem;
-       margin-right: 1rem;
-      }
-      .top-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      .profile-image {
-        width: 150px;
-        height: 150px;
-        margin-bottom: 1rem;
-      }
-      header {
-        text-align: center;
-      }
-      
-      /* Mobile publications table - stacked layout */
-      .publications-table, 
-      .publications-table tbody, 
-      .publications-table tr, 
-      .publications-table td {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-      }
-      .publications-table {
-        margin: 1rem 0;
-      }
-      .publications-table tr {
-        margin-bottom: 2rem;
-        border-bottom: 1px solid #eee;
-        padding: 1.5rem 0;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-      }
-      .publications-table tr:last-child {
-        border-bottom: none;
-        margin-bottom: 0;
-      }
-      .publications-table td {
-        padding: 0.5rem 1rem;
-        border: none;
-        text-align: left;
-        width: calc(100% - 2rem);
-      }
-      .publications-table .title {
-        font-size: 1em;
-        font-weight: 400;
-        margin-bottom: 0.5rem;
-        line-height: 1.4;
-      }
-      .publications-table .authors {
-        font-size: 0.9em;
-        margin-bottom: 0.25rem;
-        color: #555;
-      }
-      .publications-table .venue {
-        font-size: 0.85em;
-        margin-bottom: 0.25rem;
-        color: #666;
-      }
-      .publications-table .link {
-        text-align: left;
-        margin-top: 0.5rem;
-      }
-    }
-  </style>
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
 </head>
+
 <body>
-  <div class="top-section">
-    <img src="images/me.jpg" alt="Lukas Kuhn" class="profile-image">
-    <div class="top-content">
-      <header>
-        <h1>Lukas Kuhn</h1>
-        <p>Research Scientist @ DKFZ Heidelberg | M.Sc. AI, Goethe University Frankfurt</p>
-      </header>
-      
-      <div class="about-section">
-        <h2>About Me</h2>
-        <p>I'm a passionate researcher working at the intersection of AI and Neuroscience, trying to bridge the gap between the sample efficient & robust primate brain and sample hungry & brittle AI. 
-      </div>
-    </div>
-  </div>
-  
-  <section id="news">
-    <h2>News</h2>
-    <ul>
-        <li class="news-item">
-        <strong>July 2025:</strong> I am presenting <i>"An autonomous agent for auditing and improving the reliability of clinical AI models"</i> at MICCAI MedAgent 2025 in Daejeon, South Korea 🇰🇷
-      </li>
-      <li class="news-item">
-        <strong>June 2025:</strong> I will be presenting <i>"Efficient unsupervised shortcut learning detection and mitigation in transformers"</i> at ICCV 2025 in Hawaii 🌺🇺🇸
-      </li>
-      <li class="news-item">
-        <strong>April 2025:</strong> I am presenting <i>"Cognitive Neural Architecture Search Reveals Hierarchical Entailment"</i> at the Second Representational Alignment Workshop at the 2025 International Conference on Representation Learning (ICLR) in Singapore 🇸🇬
-      </li>
-    </ul>
-  </section>
-  
-  <section id="publications">
-    <h2>Selected Publications</h2>
-    <table class="publications-table">
-      <tr>
-        <td class="title"><em>An autonomous agent for auditing and improving the reliability of clinical AI models</em></td>
-        <td class="authors"><strong>Kuhn, Lukas</strong>, Florian Buettner</td>
-        <td class="venue">MedAgent @ MICCAI, 2025</td>
-        <td class="link"><a href="https://arxiv.org/abs/2507.05755">[Link]</a></td>
+  <table
+    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                  <p class="name" style="text-align: center;">
+                    Lukas Kuhn
+                  </p>
+                  <p>
+                    I'm a research scientist at the <a href="https://mlo-lab.github.io/">MLO Lab</a> lead by Prof. Dr.
+                    Florian Buettner in Frankfurt and a Masters student at Goethe University Frankfurt in AI &
+                    Computational Neuroscience.
+
+                  </p>
+                  <p style="text-align:center">
+                    <a href="mailto:lukas.kuhn@dkfz-heidelberg.De">Email</a> &nbsp;/&nbsp;
+                    <a href="https://scholar.google.com/citations?user=-Y-DZ1AAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                    <a href="https://github.com/lukas-kuhn/">Github</a>
+                  </p>
+                </td>
+                <td style="padding:2.5%;width:37%;max-width:37%">
+                  <a href="images/me.jpg"><img style="width:100%;max-width:100%;aspect-ratio: 1/1; border-radius: 50%;"
+                      alt="profile photo" src="images/me.jpg" class="hoverZoomLink"></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <h2>Research</h2>
+                  <p>
+                    I'm passionate about the intersection of AI and Neuroscience,
+                    trying to bridge the gap between the sample efficient & robust primate brain and sample hungry &
+                    brittle AI. Some papers are <span class="highlight">highlighted</span>.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+
+
+              <tr bgcolor="#ffffd0">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/asm.png' width="160">
+                  </div>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://lukas-kuhn.github.io/shortcut-detection-mitigation-page/">
+                    <span class="papertitle">Efficient unsupervised shortcut learning detection and mitigation in
+                      transformers</span>
+                  </a>
+                  <br>
+                  <strong>Lukas Kuhn</strong>,
+                  <span>Sari Sadiya</span>,
+                  <span>Joerg Schlotterer</span>,
+                  <span>Florian Buettner</span>,
+                  <span>Christin Seifert</span>,
+                  <span>Gemma Roig</span>
+                  <br>
+                  <em>ICCV</em>, 2025
+                  <br>
+                  <a href="https://lukas-kuhn.github.io/shortcut-detection-mitigation-page/">project page</a>
+                  /
+                  <a href="https://arxiv.org/abs/2501.00942">arXiv</a>
+                  <p></p>
+                  <p>
+                    By leveraging MLLMs and the representational structure of the Transformer architecture we are able
+                    to detect and mitigate shortcuts completely unsupervised.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/modelauditorworkflow.png' width="160">
+                  </div>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2507.05755">
+                    <span class="papertitle">An autonomous agent for auditing and improving the reliability of clinical
+                      AI models</span>
+                  </a>
+                  <br>
+                  <strong>Lukas Kuhn</strong>,
+                  <span>Florian Buettner</span>
+                  <br>
+                  <em>MICCAI MedAgent</em>, 2025
+                  <br>
+                  <a href="https://arxiv.org/abs/2501.00942">arXiv</a>
+                  <p></p>
+                  <p>
+                    Multi-agent architecture that generates interpretable reports explaining how much computer vision
+                    model performance likely degrades during deployment, discussing specific likely failure modes and
+                    identifying root causes and mitigation strategies.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/beyondcalibration.png' width="160">
+                  </div>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2506.09593">
+                    <span class="papertitle">Beyond Overconfidence: Foundation Models Redefine Calibration in Deep
+                      Neural Networks</span>
+                  </a>
+                  <br>
+                  <span>Achim Heckler</span>,
+                  <strong>Lukas Kuhn</strong>,
+                  <span>Florian Buettner</span>
+                  <br>
+                  <em>arXiv</em>, 2025
+                  <br>
+                  <a href="https://arxiv.org/abs/2506.09593">arXiv</a>
+                  <p></p>
+                  <p>
+                    Empirical analysis of vision foundation models that shows that these models tend to be
+                    underconfident in
+                    in-distribution predictions, resulting in higher calibration errors, while demonstrating improved
+                    calibration under distribution shifts.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/realignmethod.png' width="160">
+                  </div>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2506.09593">
+                    <span class="papertitle">Cognitive Neural Architecture Search Reveals Hierarchical Entailment</span>
+                  </a>
+                  <br>
+                  <strong>Lukas Kuhn</strong>,
+                  <span>Sari Sadiya</span>,
+                  <span>Gemma Roig</span>
+                  <br>
+                  <em>ICLR ReAlign</em>, 2025
+                  <br>
+                  <a href="https://arxiv.org/abs/2502.11141">arXiv</a>
+                  <p></p>
+                  <p>
+                    We demonstrate that optimizing convolutional network architectures for brain-alignment via
+                    evolutionary neural architecture search results in models with clear representational hierarchies.
+                    The identified models achieve brain-alignment scores surpassing even those of pretrained
+                    classification models.
+                  </p>
+                </td>
+              </tr>
+
+              <table
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                  <tr>
+                    <td style="padding:0px">
+                      <br>
+                      <p style="text-align:right;font-size:small;">
+                        Website Design copied with permission from <a
+                          href="https://jonbarron.github.io/">https://jonbarron.github.io/</a>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </td>
       </tr>
-      <tr>
-        <td class="title"><em>Beyond Overconfidence: Foundation Models Redefine Calibration in Deep Neural Networks</em></td>
-        <td class="authors">Achim Hekler, <strong>Kuhn, Lukas</strong>, Florian Buettner</td>
-        <td class="venue">arXiv, 2025</td>
-        <td class="link"><a href="https://arxiv.org/abs/2506.09593">[Link]</a></td>
-      </tr>
-      <tr>
-        <td class="title"><em>Cognitive Neural Architecture Search Reveals Hierarchical Entailment</em></td>
-        <td class="authors"><strong>Kuhn, Lukas</strong>, Sari Sadiya, Gemma Roig</td>
-        <td class="venue">Re-Align 2 @ ICLR, 2025</td>
-        <td class="link"><a href="https://arxiv.org/abs/2502.11141">[Link]</a></td>
-      </tr>
-      <tr>
-        <td class="title"><em>Efficient unsupervised shortcut learning detection and mitigation in transformers</em></td>
-        <td class="authors"><strong>Kuhn, Lukas</strong>, Sari Sadiya, Jorg Schlotterer, Florian Buettner, Christin Seifert, Gemma Roig</td>
-        <td class="venue">ICCV, 2025</td>
-        <td class="link"><a href="https://arxiv.org/abs/2501.00942">[Link]</a></td>
-      </tr>
-    </table>
-    <p>See more on <a href="https://scholar.google.com/citations?user=-Y-DZ1AAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar »</a></p>
-  </section>
-  
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>M.Sc. in Artificial Intelligence</strong>, Goethe University Frankfurt (2024-2026)</li>
-      <li><strong>B.Sc. in Computer Science</strong>, Goethe University Frankfurt (2018-2022)</li>
-    </ul>
-  </section>
-  
-  <footer>
-    &copy; 2025 Lukas Kuhn
-  </footer>
+  </table>
 </body>
+
 </html>
