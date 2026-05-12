@@ -1,142 +1,161 @@
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/computer-modern/cmu-serif.css');
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: 'CMU Serif', Georgia, serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #1a1a1a;
+  background: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-  color: #1772d0;
+  color: #226999;
   text-decoration: none;
 }
 
-a:focus,
 a:hover {
-  color: #f09228;
+  text-decoration: underline;
+}
+
+/* ── page container ── */
+.page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 4rem;
+}
+
+/* ── bio section ── */
+.bio {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.bio-text { flex: 1; }
+
+.bio-photo {
+  flex-shrink: 0;
+  width: 150px;
+}
+
+.bio-photo img {
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+h1 {
+  font-family: 'CMU Serif', Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  line-height: 1.2;
+}
+
+.links {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.77rem;
+  letter-spacing: 0.03em;
+  color: #8c8e90;
+  margin-top: 0.9rem;
+}
+
+.links a {
+  color: #8c8e90;
   text-decoration: none;
 }
 
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+.links a:hover {
+  color: #226999;
 }
 
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+/* ── dividers ── */
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 2rem 0;
 }
+
+/* ── section heading ── */
+.section-intro { margin-bottom: 1.25rem; }
 
 h2 {
-  margin: 0;
-  font-weight: normal;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-family: 'CMU Serif', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+}
+
+/* ── paper list ── */
+.paper {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.25rem 0.75rem;
+  border-top: 1px solid #eee;
+}
+
+.paper.highlighted {
+  background: #ffffd0;
+  margin: 0 -0.75rem;
+  padding: 1.25rem 0.75rem;
+}
+
+.paper-thumb {
+  flex-shrink: 0;
+  width: 140px;
+}
+
+.paper-thumb img {
+  width: 100%;
+  display: block;
+}
+
+.paper-info {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
 }
 
-.name {
-  padding-top: 20px;
-  margin: 0;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+.paper-info p {
+  margin: 0.45rem 0 0;
+  color: #444;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.award-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  background: #fff8e7;
+  border: 1px solid #e8d49a;
+  border-radius: 4px;
+  color: #5c4510;
+  margin-bottom: 5px;
 }
 
 span.highlight {
   background-color: #ffffd0;
 }
 
-.colored-box {
-    color: black;
-    padding: 20px;
-    display: inline-block;
-    border-radius: 10px;
+/* ── attribution ── */
+.attribution {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: #ccc;
+  text-align: right;
+  margin-top: 2.5rem;
 }
+
+.attribution a { color: #ccc; }
+.attribution a:hover { color: #226999; text-decoration: underline; }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Writing Your First Blog Post — Lukas Kuhn</title>
+  <meta name="author" content="Lukas Kuhn">
+  <link rel="shortcut icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../blog.css">
+
+  <!-- MathJax — remove if you don't need equations -->
+  <script>
+    MathJax = { tex: { inlineMath: [['\\(', '\\)']], displayMath: [['$$', '$$']] } };
+  </script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="page">
+
+  <a href="../index.html" class="back">← blog</a>
+
+  <!-- Post header -->
+  <header class="post-header">
+    <div class="post-meta">2026-05-12 &nbsp;·&nbsp; 5 min read</div>
+    <h1>Writing Your First Blog Post</h1>
+    <span class="tag">template</span>
+    <span class="tag">tutorial</span>
+  </header>
+
+  <!-- Post body -->
+  <article class="post-content">
+
+    <p>
+      This is the template for a blog post. Copy this file, rename it, and replace the content.
+      The stylesheet (<code>blog.css</code>) handles all the typography.
+    </p>
+
+    <h2>Sections</h2>
+
+    <p>
+      Use <code>&lt;h2&gt;</code> for top-level sections — a thin rule appears above each one
+      automatically. Use <code>&lt;h3&gt;</code> for subsections.
+    </p>
+
+    <h3>Lists</h3>
+
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item with a <a href="#">link</a></li>
+    </ul>
+
+    <h2>Callout box</h2>
+
+    <div class="callout">
+      <strong>TL;DR</strong> — Use a <code>.callout</code> div to highlight a key idea or summary.
+    </div>
+
+    <h2>Math</h2>
+
+    <p>
+      Inline: \( \mathcal{L} = \|z - \hat{z}\|_2^2 \). Display:
+    </p>
+
+    $$\mathcal{L} = \frac{1}{N} \sum_{i=1}^{N} \left\| f(x_i) - y_i \right\|_2^2$$
+
+    <h2>Code</h2>
+
+<pre><code>import torch.nn as nn
+
+class MLP(nn.Module):
+    def __init__(self, in_dim, out_dim):
+        super().__init__()
+        self.fc = nn.Linear(in_dim, out_dim)
+
+    def forward(self, x):
+        return self.fc(x)
+</code></pre>
+
+    <h2>Blockquote</h2>
+
+    <blockquote>
+      A good model learns the structure of the world, not the structure of the dataset.
+    </blockquote>
+
+    <h2>Figure</h2>
+
+    <figure>
+      <img src="../../images/me.jpg" alt="example" style="max-width: 280px;">
+      <p class="figure-caption">
+        <strong>Figure 1.</strong> An example caption.
+      </p>
+    </figure>
+
+    <hr>
+
+    <a href="../index.html" class="back" style="margin-bottom: 0;">← blog</a>
+
+  </article>
+
+</div>
+</body>
+</html>

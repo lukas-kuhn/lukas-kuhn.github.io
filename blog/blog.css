@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/computer-modern/cmu-serif.css');
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: 'CMU Serif', Georgia, serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1a1a1a;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+/* ── links ── */
+a { color: #226999; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── back link ── */
+.back {
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  color: #8c8e90;
+  text-decoration: none;
+  margin-bottom: 2.5rem;
+}
+.back:hover { color: #226999; text-decoration: none; }
+
+/* ── headings ── */
+h1, h2, h3, h4 {
+  font-family: 'CMU Serif', Georgia, serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 { font-size: 1.9rem; margin-bottom: 0.4rem; }
+h2 { font-size: 1.3rem; margin: 2rem 0 0.5rem; padding-top: 0.5rem; border-top: 1px solid #eee; }
+h3 { font-size: 1.05rem; margin: 1.4rem 0 0.3rem; }
+
+/* ── blog listing ── */
+.page-title {
+  font-size: 1.6rem;
+  margin-bottom: 0.25rem;
+}
+
+.page-subtitle {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0 0 2.5rem;
+}
+
+.post-list { list-style: none; padding: 0; margin: 0; }
+
+.post-item {
+  padding: 1.5rem 0;
+  border-top: 1px solid #eee;
+}
+
+.post-meta {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  color: #8c8e90;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.35rem;
+}
+
+.post-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+}
+
+.post-excerpt {
+  color: #444;
+  font-size: 0.93rem;
+  margin: 0 0 0.5rem;
+}
+
+.read-more {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+}
+
+/* ── single post ── */
+.post-header { margin-bottom: 2.5rem; }
+
+.post-header .post-meta { margin-bottom: 0.6rem; }
+
+.tag {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  background: #f0f0f0;
+  color: #666;
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+/* ── post content ── */
+.post-content p { margin: 0 0 1.1rem; }
+
+.post-content ul, .post-content ol {
+  padding-left: 1.5rem;
+  margin: 0 0 1.1rem;
+}
+
+.post-content li { margin-bottom: 0.25rem; }
+
+.post-content blockquote {
+  background: #f8f8f8;
+  border-left: 3px solid #226999;
+  margin: 1.5rem 0;
+  padding: 0.9rem 1.4rem;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  color: #444;
+}
+
+.post-content code {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.84em;
+  background: #f0f0f0;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.post-content pre {
+  background: #f8f8f8;
+  border-radius: 7px;
+  padding: 1.1rem 1.4rem;
+  overflow-x: auto;
+  margin: 1.4rem 0;
+}
+
+.post-content pre code {
+  background: none;
+  padding: 0;
+  font-size: 0.81rem;
+  color: #333;
+}
+
+.post-content img {
+  max-width: 100%;
+  border-radius: 6px;
+  display: block;
+  margin: 1rem auto;
+}
+
+.figure-caption {
+  font-size: 0.86rem;
+  color: #666;
+  line-height: 1.5;
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+.callout {
+  background: #f8f8f8;
+  border-radius: 7px;
+  padding: 1rem 1.5rem;
+  margin: 1.4rem 0;
+}
+
+hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
