@@ -89,6 +89,17 @@ h2 {
   margin: 0 0 0.4rem;
 }
 
+/* ── paper section label ── */
+.paper-section-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #aaa;
+  padding: 1.75rem 0.75rem 0.5rem;
+  border-top: 1px solid #eee;
+}
+
 /* ── paper list ── */
 .paper {
   display: flex;

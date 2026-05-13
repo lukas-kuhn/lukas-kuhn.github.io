@@ -41,38 +41,16 @@
   <div class="section-intro">
     <h2>Research</h2>
     <p>
-      I work on world models — specifically on training
-      <a href="https://arxiv.org/abs/2301.08243">JEPAs</a> and on using them for planning.
-      The goal is agents that predict the consequences of their actions in structured latent space,
-      rather than in pixels. Some papers are <span class="highlight">highlighted</span>.
+      I believe temporal prediction is a powerful learning signal for building rich, general-purpose representations of the world, and that JEPAs are a promising framework for learning such representations efficiently and at scale. My research focuses on developing novel JEPA architectures and training objectives, investigating their properties and capabilities, and applying them to a range of domains including vision, language, and robotics.
+      Some papers are <span class="highlight">highlighted</span>.
     </p>
   </div>
 
   <!-- Papers -->
   <div class="papers">
 
-    <div class="paper">
-      <div class="paper-thumb">
-        <img src="images/entropycalibrated.png" alt="">
-      </div>
-      <div class="paper-info">
-        <div class="award-badge">🏆&nbsp;Student Paper Award</div><br>
-        <a href="https://arxiv.org/abs/2603.06317">
-          <span class="papertitle">From Entropy to Calibrated Uncertainty: Training Language Models to Reason About Uncertainty</span>
-        </a><br>
-        <span>Azza Jenane</span>,
-        <span>Nassim Walha</span>,
-        <strong>Lukas Kuhn</strong>,
-        <span>Florian Buettner</span><br>
-        <em>AISTATS 2026 Calibration for Modern AI Workshop</em>, 2026<br>
-        <a href="https://arxiv.org/abs/2603.06317">arXiv</a>
-        <p>
-          We introduce a pipeline for post-training language models to efficiently estimate calibrated
-          uncertainty in their responses, combining entropy-based scoring, calibration, and reinforcement
-          learning to improve interpretability and reliability.
-        </p>
-      </div>
-    </div>
+    <!-- ── World models ── -->
+    <div class="paper-section-label">World Models</div>
 
     <div class="paper highlighted">
       <div class="paper-thumb">
@@ -96,6 +74,10 @@
       </div>
     </div>
 
+    <!-- ── Other work ── -->
+    <div class="paper-section-label">Other Work</div>
+
+    <!-- CVPR 2026 -->
     <div class="paper">
       <div class="paper-thumb">
         <img src="images/lvlmva.png" alt="">
@@ -119,6 +101,7 @@
       </div>
     </div>
 
+    <!-- ICCV 2025 -->
     <div class="paper highlighted">
       <div class="paper-thumb">
         <img src="images/asm.png" alt="">
@@ -144,47 +127,7 @@
       </div>
     </div>
 
-    <div class="paper">
-      <div class="paper-thumb">
-        <img src="images/modelauditorworkflow.png" alt="">
-      </div>
-      <div class="paper-info">
-        <a href="https://arxiv.org/abs/2507.05755">
-          <span class="papertitle">An Autonomous Agent for Auditing and Improving the Reliability of Clinical AI Models</span>
-        </a><br>
-        <strong>Lukas Kuhn</strong>,
-        <span>Florian Buettner</span><br>
-        <em>MICCAI MedAgent</em>, 2025<br>
-        <a href="https://arxiv.org/abs/2501.00942">arXiv</a>
-        <p>
-          Multi-agent architecture that generates interpretable reports explaining how much computer
-          vision model performance likely degrades during deployment, discussing specific failure modes
-          and identifying root causes and mitigation strategies.
-        </p>
-      </div>
-    </div>
-
-    <div class="paper">
-      <div class="paper-thumb">
-        <img src="images/beyondcalibration.png" alt="">
-      </div>
-      <div class="paper-info">
-        <a href="https://arxiv.org/abs/2506.09593">
-          <span class="papertitle">Beyond Overconfidence: Foundation Models Redefine Calibration in Deep Neural Networks</span>
-        </a><br>
-        <span>Achim Heckler</span>,
-        <strong>Lukas Kuhn</strong>,
-        <span>Florian Buettner</span><br>
-        <em>arXiv</em>, 2025<br>
-        <a href="https://arxiv.org/abs/2506.09593">arXiv</a>
-        <p>
-          Empirical analysis of vision foundation models showing they tend to be underconfident on
-          in-distribution predictions, resulting in higher calibration errors, while demonstrating
-          improved calibration under distribution shifts.
-        </p>
-      </div>
-    </div>
-
+    <!-- ICLR ReAlign 2025 -->
     <div class="paper">
       <div class="paper-thumb">
         <img src="images/realignmethod.png" alt="">
@@ -202,6 +145,73 @@
           Optimizing convolutional network architectures for brain-alignment via evolutionary neural
           architecture search results in models with clear representational hierarchies, surpassing
           even pretrained classification models on brain-alignment scores.
+        </p>
+      </div>
+    </div>
+
+    <!-- MICCAI MedAgent 2025 -->
+    <div class="paper">
+      <div class="paper-thumb">
+        <img src="images/modelauditorworkflow.png" alt="">
+      </div>
+      <div class="paper-info">
+        <a href="https://arxiv.org/abs/2507.05755">
+          <span class="papertitle">An Autonomous Agent for Auditing and Improving the Reliability of Clinical AI Models</span>
+        </a><br>
+        <strong>Lukas Kuhn</strong>,
+        <span>Florian Buettner</span><br>
+        <em>MICCAI MedAgent</em>, 2025<br>
+        <a href="https://arxiv.org/abs/2507.05755">arXiv</a>
+        <p>
+          Multi-agent architecture that generates interpretable reports explaining how much computer
+          vision model performance likely degrades during deployment, discussing specific failure modes
+          and identifying root causes and mitigation strategies.
+        </p>
+      </div>
+    </div>
+
+    <!-- AISTATS Workshop 2026 -->
+    <div class="paper">
+      <div class="paper-thumb">
+        <img src="images/entropycalibrated.png" alt="">
+      </div>
+      <div class="paper-info">
+        <div class="award-badge">🏆&nbsp;Student Paper Award</div><br>
+        <a href="https://arxiv.org/abs/2603.06317">
+          <span class="papertitle">From Entropy to Calibrated Uncertainty: Training Language Models to Reason About Uncertainty</span>
+        </a><br>
+        <span>Azza Jenane</span>,
+        <span>Nassim Walha</span>,
+        <strong>Lukas Kuhn</strong>,
+        <span>Florian Buettner</span><br>
+        <em>AISTATS 2026 Calibration for Modern AI Workshop</em>, 2026<br>
+        <a href="https://arxiv.org/abs/2603.06317">arXiv</a>
+        <p>
+          We introduce a pipeline for post-training language models to efficiently estimate calibrated
+          uncertainty in their responses, combining entropy-based scoring, calibration, and reinforcement
+          learning to improve interpretability and reliability.
+        </p>
+      </div>
+    </div>
+
+    <!-- arXiv -->
+    <div class="paper">
+      <div class="paper-thumb">
+        <img src="images/beyondcalibration.png" alt="">
+      </div>
+      <div class="paper-info">
+        <a href="https://arxiv.org/abs/2506.09593">
+          <span class="papertitle">Beyond Overconfidence: Foundation Models Redefine Calibration in Deep Neural Networks</span>
+        </a><br>
+        <span>Achim Heckler</span>,
+        <strong>Lukas Kuhn</strong>,
+        <span>Florian Buettner</span><br>
+        <em>arXiv</em>, 2025<br>
+        <a href="https://arxiv.org/abs/2506.09593">arXiv</a>
+        <p>
+          Empirical analysis of vision foundation models showing they tend to be underconfident on
+          in-distribution predictions, resulting in higher calibration errors, while demonstrating
+          improved calibration under distribution shifts.
         </p>
       </div>
     </div>
