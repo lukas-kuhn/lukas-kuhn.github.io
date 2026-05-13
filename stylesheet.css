@@ -113,6 +113,10 @@ h2 {
   display: block;
 }
 
+.paper.highlighted .paper-thumb img {
+  mix-blend-mode: multiply;
+}
+
 .paper-info {
   flex: 1;
   font-size: 14px;
